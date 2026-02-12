@@ -1,5 +1,5 @@
 import Navbar from "./Navbar.jsx";
-import ECommerceWeb from './ECommerceWeb.jsx'
+import ECommerceWeb from "./ECommerceWeb.jsx";
 // import Array from './Array.jsx'
 // import ECommerceArray from "./ECommerceArray";
 // import Tasks from "./Tasks"
