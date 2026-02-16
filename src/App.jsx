@@ -1,43 +1,32 @@
-import Navbar from "./Navbar.jsx";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { createContext } from "react";
+
 import ECommerceWeb from "./ECommerceWeb.jsx";
-// import Array from './Array.jsx'
-// import ECommerceArray from "./ECommerceArray";
-// import Tasks from "./Tasks"
-// import ArrayMethods from "./ArrayMethods"
-// import StringMethods from "./StringMethods"
-// import UseState from "./UseState"
-// import UseEffect  from "./UseEffect"
+import Navbar from "./Navbar.jsx";
+import Home from "./Home";
+import Contact from "./Contact";
+import Menu from "./Menu";
+
+export const userStr = createContext();
 
 function App() {
+  const str = "Hello from";
   return (
     <div>
-      <Navbar />
+      <Router>
+        <Navbar />
+        <userStr.Provider value={str}>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/menu" element={<Menu />} />
+            <Route path="*" element={<h1> PAGE NOT FOUND</h1>} />
+          </Routes>
+        </userStr.Provider>
+      </Router>
 
       <ECommerceWeb />
 
-      {/* <ECommerceArray /> */}
-
-      {/* <Array /> */}
-
-      {/* <Tasks /> */}
-
-      {/* <ArrayMethods /> */}
-
-      {/* <StringMethods /> */}
-
-      {/* <ArrayMethods array={[4, 3, 1, 5, 2]} />
-    <ArrayMethods array={[9, 6, 8, 10, 7]} /> */}
-
-      {/* <ArrayMethods array = {["React", "JS", "Javascript", "Web Development", "Software Development"]}/> */}
-
-      {/* <StringMethods text="Banana" />
-    <StringMethods text="Rainbow" />
-    <StringMethods text="Education" />
-    <StringMethods text="LEVEL" /> */}
-
-      {/* <UseState /> */}
-
-      {/* <UseEffect /> */}
     </div>
   );
 }
