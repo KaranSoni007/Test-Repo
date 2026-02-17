@@ -1,16 +1,16 @@
 import React, { useContext } from "react";
 import { userStr } from "./App";
 
-function Home() {
+function Menu() {
   const str = useContext(userStr);
 
   return (
     <div>
       <button className="text-xl p-1 flex justify-center font-bold">
-        {str} : Home
+        {str} : Menu
       </button>
     </div>
   );
 }
 
-export default Home;
+export default Menu;
