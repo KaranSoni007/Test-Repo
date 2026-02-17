@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { createContext } from "react";
-
+import { useEffect } from "react";
 import ECommerceWeb from "./ECommerceWeb.jsx";
 import Navbar from "./Navbar.jsx";
 import Home from "./Home";
@@ -11,6 +11,9 @@ export const userStr = createContext();
 
 function App() {
   const str = "Hello from";
+  useEffect(() => {
+    console.log("Hello World")
+  }, [])
   return (
     <div>
       <Router>
