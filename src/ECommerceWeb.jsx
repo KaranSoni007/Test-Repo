@@ -44,7 +44,7 @@
 import Products from "./Products";
 function CardView({ src, title, DiscountedPrice, OriginalPrice, MRP }) {
   return (
-    <div className="flex flex-col border rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-300 bg-white">
+    <div className="flex flex-col border rounded-lg overflow-hidden shadow-sm hover:shadow-xl shadow-blue-300 transition-shadow duration-300 bg-white">
       <div className="h-48 overflow-hidden bg-gray-100">
         <img
           className="w-full h-full object-contain p-4"

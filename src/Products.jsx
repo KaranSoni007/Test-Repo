@@ -62,6 +62,27 @@ const products = [
     OriginalPrice: "₹1,44,999",
     MRP: "1,99,999",
   },
+  {
+    src: "https://cdn.thewirecutter.com/wp-content/media/2025/10/BEST-32-IN-TV-3310.jpg?auto=webp&quality=75&width=1024",
+    title: "Blaupunkt 139cm (55inch) QLED Ultra HD",
+    DiscountedPrice: "Just ₹34,499*",
+    OriginalPrice: "₹39,999",
+    MRP: "59,999",
+  },
+  {
+    src: "https://m.media-amazon.com/images/I/61M7Z1VpCwL._AC_UF1000,1000_QL80_.jpg",
+    title: "LG 164cm (65inch) 4k Ultra HD",
+    DiscountedPrice: "Just ₹75,490*",
+    OriginalPrice: "₹77,990",
+    MRP: "1,14,999",
+  },
+  {
+    src: "https://m.media-amazon.com/images/I/61M7Z1VpCwL._AC_UF1000,1000_QL80_.jpg",
+    title: "LG 164cm (65inch) 4k Ultra HD",
+    DiscountedPrice: "Just ₹75,490*",
+    OriginalPrice: "₹77,990",
+    MRP: "1,14,999",
+  },
 ];
 
 export default products;
